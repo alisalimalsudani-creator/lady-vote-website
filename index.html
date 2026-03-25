@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lady Vote - Premium Cosmetics & Skincare</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>LADY<span class="logo-accent">VOTE</span></h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#cart" class="cart-icon"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Elevate Your Natural Beauty</h2>
+            <p>Premium skincare and cosmetics crafted for the confident woman</p>
+            <div class="hero-cta">
+                <a href="#products" class="btn btn-primary">Shop Now</a>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-placeholder">Beauty Essentials</div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Bestsellers</h2>
+            <p class="section-subtitle">Discover our most-loved skincare solutions</p>
+            
+            <div class="products-grid">
+                <!-- Product 1: Facial Cleansing Gel -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="image-placeholder">Facial Cleansing Gel</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Facial Cleansing Gel</h3>
+                        <p class="product-desc">Gently cleanses and refreshes skin while maintaining natural moisture balance</p>
+                        <ul class="product-highlights">
+                            <li>✓ Glycolic & Lactic Acid</li>
+                            <li>✓ Hyaluronic Acid</li>
+                            <li>✓ Aloe Vera Extract</li>
+                        </ul>
+                        <div class="product-footer">
+                            <span class="price">$24.99</span>
+                            <button class="btn-add-cart" onclick="addToCart('Facial Cleansing Gel', 24.99)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: Hyalu Serum -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="image-placeholder">Hyalu Serum</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Hyalu Serum</h3>
+                        <p class="product-desc">Deep hydration serum with anti-aging properties for smoother, healthier skin</p>
+                        <ul class="product-highlights">
+                            <li>✓ Sodium Hyaluronate</li>
+                            <li>✓ Snail Secretion Filtrate</li>
+                            <li>✓ Glycerin Rich</li>
+                        </ul>
+                        <div class="product-footer">
+                            <span class="price">$32.99</span>
+                            <button class="btn-add-cart" onclick="addToCart('Hyalu Serum', 32.99)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: Sunscreen Cream SPF +50 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="image-placeholder">Sunscreen Cream SPF +50</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Sunscreen Cream SPF +50</h3>
+                        <p class="product-desc">Broad-spectrum protection while moisturizing and soothing the skin</p>
+                        <ul class="product-highlights">
+                            <li>✓ Zinc Oxide & Titanium</li>
+                            <li>✓ UV Filters</li>
+                            <li>✓ Coconut Oil</li>
+                        </ul>
+                        <div class="product-footer">
+                            <span class="price">$28.99</span>
+                            <button class="btn-add-cart" onclick="addToCart('Sunscreen Cream SPF +50', 28.99)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4: Intimate Feminine Wash -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="image-placeholder">Intimate Feminine Wash</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Intimate Feminine Wash</h3>
+                        <p class="product-desc">Gentle daily intimate wash that cleanses while maintaining natural pH balance</p>
+                        <ul class="product-highlights">
+                            <li>✓ Lactic Acid</li>
+                            <li>✓ Aloe Extract</li>
+                            <li>✓ Calendula</li>
+                        </ul>
+                        <div class="product-footer">
+                            <span class="price">$19.99</span>
+                            <button class="btn-add-cart" onclick="addToCart('Intimate Feminine Wash', 19.99)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5: Sensi Whitening Cream -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="image-placeholder">Sensi Whitening Cream</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Sensi Whitening Cream</h3>
+                        <p class="product-desc">Brightens and evens skin tone while reducing hair growth appearance</p>
+                        <ul class="product-highlights">
+                            <li>✓ Licorice Root Extract</li>
+                            <li>✓ Alpha Arbutin</li>
+                            <li>✓ Argan Oil</li>
+                        </ul>
+                        <div class="product-footer">
+                            <span class="price">$26.99</span>
+                            <button class="btn-add-cart" onclick="addToCart('Sensi Whitening Cream', 26.99)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-all-cta">
+                <a href="#" class="btn btn-primary btn-lg">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Lady Vote -->
+    <section id="about" class="why-choose">
+        <div class="container">
+            <h2>Why Choose Lady Vote?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Natural Ingredients</h3>
+                    <p>Carefully selected botanical extracts and active ingredients for visible results</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Dermatologist Tested</h3>
+                    <p>Clinically proven formulas safe for all skin types</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Premium Quality</h3>
+                    <p>Luxury skincare products at accessible prices</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Fast Shipping</h3>
+                    <p>Quick and reliable delivery to your doorstep</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Beautiful & Informed</h2>
+                <p>Get exclusive offers, skincare tips, and new product launches</p>
+                <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+971 7 1228 8041</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@ladyvote.ae</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-location-dot"></i>
+                        <div>
+                            <h4>Follow Us</h4>
+                            <div class="social-links">
+                                <a href="https://instagram.com/lady_voteiq" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" onsubmit="handleContactSubmit(event)">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Lady Vote</h4>
+                    <p>Premium skincare and cosmetics for the modern woman</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lady Vote. All rights reserved. Elevate Your Natural Beauty.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCart()">&times;</span>
+            <h2>Shopping Cart</h2>
+            <div id="cartItems"></div>
+            <div class="cart-total">
+                <h3>Total: $<span id="cartTotal">0.00</span></h3>
+            </div>
+            <button class="btn btn-primary btn-lg" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
